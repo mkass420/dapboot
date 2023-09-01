@@ -23,7 +23,7 @@
 #include "usb_conf.h"
 
 #ifndef LANDING_PAGE_URL
-#define LANDING_PAGE_URL "devanlai.github.io/webdfu/dfu-util/"
+#define LANDING_PAGE_URL ""
 #endif
 
 #define LANDING_PAGE_DESCRIPTOR_SIZE (WEBUSB_DT_URL_DESCRIPTOR_SIZE \

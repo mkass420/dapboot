@@ -26,7 +26,7 @@
 #endif
 
 #ifndef USB_VENDOR_STRING
-#define USB_VENDOR_STRING "Devanarchy"
+#define USB_VENDOR_STRING "Pcilabs"
 #endif
 
 #ifndef USB_PID
@@ -43,7 +43,7 @@
 #ifdef BOOTLOADER_HIGH
 #define USB_PRODUCT_STRING "DAPBoot High-Memory DFU Bootloader"
 #else
-#define USB_PRODUCT_STRING "DAPBoot DFU Bootloader"
+#define USB_PRODUCT_STRING "Tmtng Update"
 #endif
  
 #endif

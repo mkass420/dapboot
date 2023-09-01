@@ -126,6 +126,19 @@ ifeq ($(TARGET),BLUEPILLPLUSGD32)
 	LDSCRIPT		:= ./stm32f103/stm32f103x8.ld
 	ARCH			= STM32F1
 endif
+ifeq ($(TARGET),BLUEPILLPLUSGD32_HIGH_256)
+	TARGET_COMMON_DIR	:= ./stm32f103
+	TARGET_SPEC_DIR		:= ./stm32f103/bluepillplus-gd32
+	LDSCRIPT		:= ./stm32f103/stm32f103xc_high.ld
+	ARCH			= STM32F1
+	DEFS			+= -DBOOTLOADER_HIGH
+endif
+ifeq ($(TARGET),TMTNG)
+	TARGET_COMMON_DIR	:= ./stm32f103
+	TARGET_SPEC_DIR		:= ./stm32f103/tmtng
+	LDSCRIPT		:= ./stm32f103/stm32f103x8.ld
+	ARCH			= STM32F1
+endif
 ifeq ($(TARGET),BTTSKRMINIE3V2)
 	TARGET_COMMON_DIR	:= ./stm32f103
 	TARGET_SPEC_DIR		:= ./stm32f103/skrminie3v2
